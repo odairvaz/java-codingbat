@@ -213,4 +213,8 @@ public class Exer01 {
 		result[result.length - 1] = nums[nums.length - 1];
 		return result;
 	}	
+	
+	public static void main(String[] args) {
+		System.out.println("hello worl!");
+	}
 }

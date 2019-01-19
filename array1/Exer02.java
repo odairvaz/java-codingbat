@@ -241,14 +241,4 @@ public class Exer02 {
 		return result;
 	}
 
-
-
-
-	public static void main(String[] args) {
-		int[] a = {1,7};
-		int[] b = {};
-		System.out.println(Arrays.toString(front11(a,b)));
-		//System.out.println(unlucky1(a));
-	}
-
 }
