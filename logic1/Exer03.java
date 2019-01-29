@@ -6,9 +6,9 @@ public class Exer03 {
 	/*
 	 * Given three ints, a b c, return true if it is possible to add two of the ints to get the third.
 	 * 
-	 * twoAsOne(1, 2, 3) â†’ true
-	 * twoAsOne(3, 1, 2) â†’ true
-	 * twoAsOne(3, 2, 2) â†’ false
+	 * twoAsOne(1, 2, 3) Ã¢â€ â€™ true
+	 * twoAsOne(3, 1, 2) Ã¢â€ â€™ true
+	 * twoAsOne(3, 2, 2) Ã¢â€ â€™ false
 	 */
 	public static boolean twoAsOne(int a, int b, int c) {
 		return (a+b == c) || (b+c == a) || (a+c == b);
@@ -19,9 +19,9 @@ public class Exer03 {
 	 * Given three ints, a b c, return true if b is greater than a, and c is greater than b. 
 	 * However, with the exception that if "bOk" is true, b does not need to be greater than a.
 	 * 
-	 * inOrder(1, 2, 4, false) â†’ true
-	 * inOrder(1, 2, 1, false) â†’ false
-	 * inOrder(1, 1, 2, true) â†’ true
+	 * inOrder(1, 2, 4, false) Ã¢â€ â€™ true
+	 * inOrder(1, 2, 1, false) Ã¢â€ â€™ false
+	 * inOrder(1, 1, 2, true) Ã¢â€ â€™ true
 	 */
 	public boolean inOrder(int a, int b, int c, boolean bOk) {
 		if(bOk)
@@ -35,9 +35,9 @@ public class Exer03 {
 	 * or 5 6 7, but not 6 5 7 or 5 5 7. However, with the exception that if "equalOk" is true, 
 	 * equality is allowed, such as 5 5 7 or 5 5 5.
 	 * 
-	 * inOrderEqual(2, 5, 11, false) â†’ true
-	 * inOrderEqual(5, 7, 6, false) â†’ false
-	 * inOrderEqual(5, 5, 7, true) â†’ true
+	 * inOrderEqual(2, 5, 11, false) Ã¢â€ â€™ true
+	 * inOrderEqual(5, 7, 6, false) Ã¢â€ â€™ false
+	 * inOrderEqual(5, 5, 7, true) Ã¢â€ â€™ true
 	 */
 	public boolean inOrderEqual(int a, int b, int c, boolean equalOk) {
 		if(equalOk)
@@ -50,9 +50,9 @@ public class Exer03 {
 	 * Given three ints, a b c, return true if two or more of them have the same rightmost digit. 
 	 * The ints are non-negative. Note: the % "mod" operator computes the remainder, e.g. 17 % 10 is 7.
 	 * 
-	 * lastDigit(23, 19, 13) â†’ true
-	 * lastDigit(23, 19, 12) â†’ false
-	 * lastDigit(23, 19, 3) â†’ true
+	 * lastDigit(23, 19, 13) Ã¢â€ â€™ true
+	 * lastDigit(23, 19, 12) Ã¢â€ â€™ false
+	 * lastDigit(23, 19, 3) Ã¢â€ â€™ true
 	 */
 	public boolean lastDigit(int a, int b, int c) {
 		int lastA = a % 10;
@@ -65,9 +65,9 @@ public class Exer03 {
 	/*
 	 * Given three ints, a b c, return true if one of them is 10 or more less than one of the others.
 	 * 
-	 * lessBy10(1, 7, 11) â†’ true
-	 * lessBy10(1, 7, 10) â†’ false
-	 * lessBy10(11, 1, 7) â†’ true
+	 * lessBy10(1, 7, 11) Ã¢â€ â€™ true
+	 * lessBy10(1, 7, 10) Ã¢â€ â€™ false
+	 * lessBy10(11, 1, 7) Ã¢â€ â€™ true
 	 */
 	public boolean lessBy10(int a, int b, int c) {
 		int aMinusB = Math.abs(a - b);
@@ -82,9 +82,9 @@ public class Exer03 {
 	 * if the two dice show the same value, increment one die to the next value, 
 	 * wrapping around to 1 if its value was 6.
 	 * 
-	 * withoutDoubles(2, 3, true) → 5
-	 * withoutDoubles(3, 3, true) → 7
-	 * withoutDoubles(3, 3, false) → 6
+	 * withoutDoubles(2, 3, true) â†’ 5
+	 * withoutDoubles(3, 3, true) â†’ 7
+	 * withoutDoubles(3, 3, false) â†’ 6
 	 */
 	public int withoutDoubles(int die1, int die2, boolean noDoubles) {
 		if(noDoubles && die1 == die2) {
@@ -101,9 +101,9 @@ public class Exer03 {
 	 * when divided by 5, then the return the smaller value. However, in all cases, if the two values are the 
 	 * same, return 0. Note: the % "mod" operator computes the remainder, e.g. 7 % 5 is 2.
 	 * 
-	 * maxMod5(2, 3) → 3
-	 * maxMod5(6, 2) → 6
-	 * maxMod5(3, 2) → 3
+	 * maxMod5(2, 3) â†’ 3
+	 * maxMod5(6, 2) â†’ 6
+	 * maxMod5(3, 2) â†’ 3
 	 */
 	public int maxMod5(int a, int b) {
 		if (a == b)
@@ -119,9 +119,9 @@ public class Exer03 {
 	 * If they are all the value 2, the result is 10. Otherwise if they are all the same, the result is 5. 
 	 * Otherwise so long as both b and c are different from a, the result is 1. Otherwise the result is 0.
 	 * 
-	 * redTicket(2, 2, 2) → 10
-	 * redTicket(2, 2, 1) → 0
-	 * redTicket(0, 0, 0) → 5
+	 * redTicket(2, 2, 2) â†’ 10
+	 * redTicket(2, 2, 1) â†’ 0
+	 * redTicket(0, 0, 0) â†’ 5
 	 */
 	public int redTicket(int a, int b, int c) {
 		if (a == b && b == 2 && c == 2)
@@ -139,9 +139,9 @@ public class Exer03 {
 	 * the result is 0. If all of the numbers are the same, the result is 20. 
 	 * If two of the numbers are the same, the result is 10.
 	 * 
-	 * greenTicket(1, 2, 3) → 0
-	 * greenTicket(2, 2, 2) → 20
-	 * greenTicket(1, 1, 2) → 10
+	 * greenTicket(1, 2, 3) â†’ 0
+	 * greenTicket(2, 2, 2) â†’ 20
+	 * greenTicket(1, 1, 2) â†’ 10
 	 */
 	public int greenTicket(int a, int b, int c) {
 		if(a == b && b == c) 
@@ -157,9 +157,9 @@ public class Exer03 {
 	 * Consider the sum of the numbers in each pair. If any pair sums to exactly 10, the result is 10. 
 	 * Otherwise if the ab sum is exactly 10 more than either bc or ac sums, the result is 5. Otherwise the result is 0.
 	 * 
-	 * blueTicket(9, 1, 0) → 10
-	 * blueTicket(9, 2, 0) → 0
-	 * blueTicket(6, 1, 4) → 10
+	 * blueTicket(9, 1, 0) â†’ 10
+	 * blueTicket(9, 2, 0) â†’ 0
+	 * blueTicket(6, 1, 4) â†’ 10
 	 */
 	public int blueTicket(int a, int b, int c, String bd) {
 		int ab = a + b;
@@ -177,9 +177,9 @@ public class Exer03 {
 	 * such as the 2 in 12 and 23. 
 	 * (Note: division, e.g. n/10, gives the left digit while the % "mod" n%10 gives the right digit.)
 	 * 
-	 * shareDigit(12, 23) → true
-	 * shareDigit(12, 43) → false
-	 * shareDigit(12, 44) → false
+	 * shareDigit(12, 23) â†’ true
+	 * shareDigit(12, 43) â†’ false
+	 * shareDigit(12, 44) â†’ false
 	 */
 	public boolean shareDigit(int a, int b) {
 		int rightDigitA = a % 10;
@@ -195,27 +195,22 @@ public class Exer03 {
 	
 	//-------------------------------------------------------------------------------------------------------------
 	/*
-	 * Given 2 non-negative ints, a and b, return their sum, so long as the sum has the same number of digits as a. 
-	 * If the sum has more digits than a, just return a without b. 
-	 * (Note: one way to compute the number of digits of a non-negative int n is to convert it to a 
-	 * string with String.valueOf(n) and then check the length of the string.)
-	 * 
-	 * sumLimit(2, 3) → 5
-	 * sumLimit(8, 3) → 8
-	 * sumLimit(8, 1) → 9
+	 * 	Given 2 non-negative ints, a and b, return their sum, so long as the sum has the
+	 *  same number of digits as a. If the sum has more digits than a, just return a 
+	 *  without b. (Note: one way to compute the number of digits of a non-negative 
+	 *  int n is to convert it to a string with String.valueOf(n) and then check the 
+	 *  length of the string.)
+	 *  
+	 *  sumLimit(2, 3) → 5
+	 *  sumLimit(8, 3) → 8
+	 *  sumLimit(8, 1) → 9
 	 */
 	public int sumLimit(int a, int b) {
-		  
+		String aString = String.valueOf(a);
+		int aLen = aString.length();
+		String sumString = String.valueOf(a + b);
+		int sumLen = sumString.length();
+
+		return (sumLen == aLen) ? a + b : a;
 	}
-
-
-
-
-	
-	public static void main(String[] args) {
-		System.out.println(Exer03.twoAsOne(3, 2, 2));
-		
-	}
-
-
 }
